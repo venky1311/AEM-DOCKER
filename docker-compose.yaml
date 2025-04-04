@@ -1,0 +1,21 @@
+services:
+  aem-author:
+    build:
+      context: ./author
+    ports:
+      - "4502:4502"
+    container_name: aem-author
+
+  aem-publisher:
+    build:
+      context: ./publisher
+    ports:
+      - "4503:4503"
+    container_name: aem-publisher
+
+  aem-dispatcher:
+    build:
+      context: ./dispatcher
+    ports:
+      - "80:80"
+    container_name: aem-dispatcher

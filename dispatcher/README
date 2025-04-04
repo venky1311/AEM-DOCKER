@@ -1,0 +1,22 @@
+Please go to docs/README.html to find the documentation.
+
+## I am using AEM CLOUD SDK 
+# JAR Version: aem-sdk-2025.3.19823.20250304T101418Z-250300
+# Dispatcher version : aem-sdk-dispatcher-tools-2.0.235-windows
+
+Refer this link to setup Dispatcher setup:
+https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools
+
+Steps:
+1. After extracting the zip file, Please name it to dispatcher
+2. Then be in the dispatcher directory then execute => bin\validate src
+    ex: C:\Projects\AEMAACS\aem-docker\dispatcher> bin\validate src
+3. then execute below command
+$ bin\docker_run <src-folder> <aem-publish-host>:<aem-publish-port> <dispatcher-port>
+
+bin\docker_run src host.docker.internal:4503 8080
+
+$ DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug bin\docker_run <User Directory>/code/my-project/dispatcher/src host.docker.internal:4503 8080
+
+DISP_LOG_LEVEL=Debug REWRITE_LOG_LEVEL=Debug bin\docker_run src host.docker.internal:4503 8080
+
