@@ -2,8 +2,6 @@
 
 This README provides detailed instructions for setting up Adobe Experience Manager (AEM) author and publisher instances using Docker. Follow these steps to build and run your AEM instances locally# AEM Docker Setup
 
-This README provides detailed instructions for setting up Adobe Experience Manager (AEM) author and publisher instances using Docker. Follow these steps to build and run your AEM instances locally.
-
 ## Prerequisites
 
 - **Docker**: Ensure Docker is installed and running on your machine. You can download Docker from [Docker's official website](https://www.docker.com/products/docker-desktop).
@@ -15,11 +13,11 @@ This README provides detailed instructions for setting up Adobe Experience Manag
 - aem-docker
   - author
     - [Dockerfile](aem-docker/author/Dockerfile)
-    - aem-author-p4502.jar
-    - license.properties
+    - aem-author-p4502.jar ** Please place the jar and rename
+    - license.properties ** for cloud sdk is not required
   - publisher
     - [Dockerfile](aem-docker/publisher/Dockerfile)
-    - aem-publish-p4503.jar
+    - aem-publish-p4503.jar ** Please place the jar and rename
     - license.properties
   - dispatcher
     - [Dockerfile](aem-docker/dispatcher/Dockerfile)
